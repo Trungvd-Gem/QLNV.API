@@ -32,6 +32,8 @@ namespace QLNV.API
             services.AddControllers();
             services.AddTransient<IPhongBanRepository, PhongBanRepository>();
             services.AddTransient<IPhongBanService, PhongBanService>();
+            services.AddTransient<INhanVienRepository, NhanVienRepository>();
+            services.AddTransient<INhanVienService, NhanVienService>();
 
 
         }

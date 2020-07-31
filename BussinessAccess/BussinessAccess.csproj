@@ -7,6 +7,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BusinessAccess.Interface\BusinessAccess.Interface.csproj" />
     <ProjectReference Include="..\DataAccess.Interface\DataAccess.Interface.csproj" />
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
   </ItemGroup>
 
 </Project>
