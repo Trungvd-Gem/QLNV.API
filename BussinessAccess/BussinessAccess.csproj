@@ -4,4 +4,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessAccess.Interface\BusinessAccess.Interface.csproj" />
+    <ProjectReference Include="..\DataAccess.Interface\DataAccess.Interface.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -8,7 +8,7 @@ namespace DataAccess
 {
     public class BaseRepository
     {
-        IDbConnection con;
+        protected IDbConnection con;
 
         public BaseRepository()
         {

@@ -2,6 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BusinessAccess.Interface;
+using BussinessAccess;
+using DataAccess;
+using DataAccess.Interface;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +30,10 @@ namespace QLNV.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddTransient<IPhongBanRepository, PhongBanRepository>();
+            services.AddTransient<IPhongBanService, PhongBanService>();
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
