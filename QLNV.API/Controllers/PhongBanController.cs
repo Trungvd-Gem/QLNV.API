@@ -32,7 +32,7 @@ namespace QLNV.API.Controllers
         }
 
         [HttpGet]
-        [Route("api/phongban/danhsachphongban/{id}")]
+        [Route("api/phongban/layphongban/{id}")]
         public PhongBan LayPhongBanID(int id)
         {
             return _phongBanService.LayPhongBanID(id);
@@ -42,7 +42,7 @@ namespace QLNV.API.Controllers
         [Route("api/phongban/taophongban")]
         public int TaoPhongBan([FromBody] TaoPhongBan request)
         {
-            return _phongBanService.TaoPhongBan(request);
+            return _phongBanService.TaoPhongBan(request);  
         }
 
         [HttpPut]
