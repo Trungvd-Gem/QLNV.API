@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace QLNV.API.Controllers
 {
-    [Route("api/[controller]")]
+    
     [ApiController]
     public class NhanVienController : ControllerBase
     {

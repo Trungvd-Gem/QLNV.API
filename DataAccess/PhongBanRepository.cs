@@ -40,7 +40,7 @@ namespace DataAccess
                 return id;
             } catch (Exception ex)
             {
-                throw ex;
+                return 0;
             }
         }
 
